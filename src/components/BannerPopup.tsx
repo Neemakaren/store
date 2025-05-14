@@ -9,7 +9,7 @@ const BannerPopup = () => {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center z-50 bg-black  transition-opacity duration-300 ${
+      className={`fixed inset-0 flex items-center justify-center z-50 bg-gradient-to-r to-[black]  transition-opacity duration-300 ${
         show ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >

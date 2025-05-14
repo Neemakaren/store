@@ -45,10 +45,7 @@ const Navbar = () => {
             >
               Categories
             </Link>
-            <div
-              className="flex items-center gap-2"
-              onClick={() => dispatch(updateModal(true))}
-            >
+            <div className="flex items-center gap-2">
               {username !== "" ? (
                 <img
                   src="https://robohash.org/Terry.png?set=set4"
@@ -64,6 +61,7 @@ const Navbar = () => {
                 ) : (
                   <span
                     className="cursor-pointer hover:opacity-85 dark:text-white"
+                    onClick={() => dispatch(updateModal(true))}
                     data-test="login-btn"
                   >
                     Login

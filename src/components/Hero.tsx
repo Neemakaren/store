@@ -22,16 +22,22 @@ function Hero() {
   }, [api]);
 
   return (
-    <main className="bg-gray-50 dark:bg-slate-800">
-      <main className="grid grid-cols-1 md:grid-cols-2 container mx-auto mt-6 ">
-        <main className="container mx-auto flex flex-col justify-center h-96 mt-10 ">
+    <main className="bg-gray-50 dark:bg-slate-800 border-r-4">
+      <main className="grid grid-cols-1 md:grid-cols-2 container mx-auto mt-2 ">
+        <main className="container mx-auto flex flex-col justify-center space-y-8 h-96 mt-24 ">
           <h1 className="font-bold md:text-2xl opacity-70">
             The Best Collection
           </h1>
           <div className="text-[2.2em] md:text-5xl font-bold leading-14">
             Explore And Search For <br />{" "}
-            <span className="text-blue-500">Any Book</span> In Our Library
+            <span className="text-blue-500">Any Product</span> In Our Store
           </div>
+          <p className="tracking-wider">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            rerum vitae beatae, sapiente dolor deserunt ipsa voluptas, hic
+            commodi veritatis et officiis minus perferendis voluptates fugiat
+            accusamus veniam omnis culpa.
+          </p>
           <Link
             to="/product/6"
             data-test="hero-btn"
