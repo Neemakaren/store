@@ -25,13 +25,13 @@ export const authSlice = createSlice({
     },
     doLogin: (state, action: PayloadAction<LoginProps>) => {
       if (
-        action.payload.username === "atuny0" &&
+        action.payload.username === "dune" &&
         action.payload.password === "9uQFF1Lh"
       ) {
-        localStorage.setItem("username", "atuny0");
+        localStorage.setItem("username", "dune");
         return {
           ...state,
-          username: "atuny0",
+          username: "dune",
           modalOpen: false,
           isLoggedIn: true,
         };

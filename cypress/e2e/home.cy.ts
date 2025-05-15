@@ -6,18 +6,10 @@ describe("testing the home page", () => {
     cy.visit("/");
   });
 
-  // it("the hero section loads", () => {
-  //   cy.get('[data-test="hero-btn"]').should("contain.text", "Shop Now");
-  // });
-
   it("the feature section loads", () => {
     cy.contains(/Discover your next Great Read/i).should("be.visible");
   });
 
-  // it("the products titles load", () => {
-  //   cy.contains(/trending products/i).should("be.visible");
-  //   cy.contains(/new arrivals/i).should("be.visible");
-  // });
 
   it("the banner section loads", () => {
     cy.get('[data-test="banner-btn"]').should("contain.text", "Shop Now");

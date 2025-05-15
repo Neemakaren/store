@@ -13,10 +13,10 @@ describe("testing navbar functions", () => {
     cy.location("pathname").should("equal", "/");
   });
 
-  // it("clicking on a product works properly", () => {
-  //   cy.get('[data-test="product-card"]').first().click();
-  //   cy.location("pathname").should("equal", "/product/1");
-  // });
+  it("clicking on a product works properly", () => {
+    cy.get('[data-test="product-card"]').first().click();
+    cy.location("pathname").should("equal", "/product/1");
+  });
 
   it("login & logout works properly", () => {
     cy.get('[data-test="login-btn"]').click();
