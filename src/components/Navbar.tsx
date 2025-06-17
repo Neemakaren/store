@@ -28,7 +28,7 @@ const Navbar = () => {
             className="text-2xl font-bold dark:text-white"
             data-test="main-logo"
           >
-            BookLib
+            StoreLib
           </Link>
           <div className="flex gap-4 md:gap-8 items-center dark:text-white">
             <Link

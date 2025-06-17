@@ -39,7 +39,7 @@ const LoginModal = () => {
               </div>
               <p className="leading-4">
                 This is a hobby project for development purpose only. No well
-                suited backend has been used here. Please use <b>atuny0</b> as
+                suited backend has been used here. Please use <b>dune</b> as
                 username & <b>9uQFF1Lh</b> as password. You can find these
                 credentials in the placeholder also.{" "}
                 <span
@@ -62,7 +62,7 @@ const LoginModal = () => {
                   <input
                     data-test="input-username"
                     type="text"
-                    placeholder="Your username here... (atuny0)"
+                    placeholder="Your username here... (dune)"
                     className="border w-full border-black py-2 px-8 rounded dark:bg-slate-600"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -75,7 +75,7 @@ const LoginModal = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
-                    placeholder="Your password here... (9uQFF1Lh)"
+                    placeholder="Your password here... (dune)"
                     className="border w-full border-black py-2 px-8 rounded dark:bg-slate-600"
                   />
                   <RiLockPasswordFill className="absolute top-3 left-2 text-lg" />

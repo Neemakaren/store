@@ -21,18 +21,15 @@ interface UserInfo {
   username: string;
   firstName: string;
   lastName: string;
-  maidenName: string;
-  age: number;
   gender: string;
   email: string;
   phone: string;
-  bloodGroup: string;
   address: Address;
   company: Company;
   university: string;
 }
 
-const Profile: FC = () => {
+const Profile = () => {
   const [info, setInfo] = useState<UserInfo>();
 
   useEffect(() => {
@@ -44,10 +41,10 @@ const Profile: FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto min-h-[83vh] w-full max-w-5xl dark:text-white">
+    <div className="container mx-auto min-h-[83vh] w-full max-w-5xl dark:text-white maxx">
       <h1 className="text-4xl p-4 font-bold font-lora">Your Account</h1>
       <div className="font-karla grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 p-4">
-        <img src={info?.image} alt="pp" className="text-center" />
+        <img src={info?.image} alt="img" className="text-center" />
         <table>
           <tbody>
             <tr>
@@ -63,10 +60,6 @@ const Profile: FC = () => {
               <td>{info?.lastName}</td>
             </tr>
             <tr>
-              <td className="font-bold w-32">Maiden Name</td>
-              <td>{info?.maidenName}</td>
-            </tr>
-            <tr>
               <td className="font-bold">Email</td>
               <td>{info?.email}</td>
             </tr>
@@ -75,20 +68,8 @@ const Profile: FC = () => {
               <td>{info?.phone}</td>
             </tr>
             <tr>
-              <td className="font-bold">University</td>
-              <td>{info?.university}</td>
-            </tr>
-            <tr>
-              <td className="font-bold">Age</td>
-              <td>{info?.age}</td>
-            </tr>
-            <tr>
               <td className="font-bold">Gender</td>
               <td>{info?.gender}</td>
-            </tr>
-            <tr>
-              <td className="font-bold">Blood Group</td>
-              <td>{info?.bloodGroup}</td>
             </tr>
           </tbody>
         </table>

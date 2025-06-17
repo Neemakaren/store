@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-const Banner: FC = () => (
+const Banner = () => (
   <div className="container my-20 mx-auto h-80 px-4 md:flex font-lora dark:bg-slate-800">
     <img src="/4.webp" alt="banner" className="md:w-1/2 object-cover" />
     <div className="bg-[#e3edf6] dark:bg-slate-600 dark:text-white md:w-1/2 flex flex-col items-center text-center justify-center p-4">

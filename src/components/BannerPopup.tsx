@@ -15,15 +15,15 @@ const BannerPopup = () => {
     >
       <div className="relative">
         <img
-          src="/banner.jpg"
+          src="/7.png"
           alt="banner"
-          className="w-[50vw] min-w-[300px] m-auto"
+          className="w-[50vw] min-w-[300px] m-auto rounded-3xl"
         />
         <button
           onClick={() => {
             dispatch(updateBanner(false));
           }}
-          className="absolute top-0 right-0 m-2 bg-white rounded-full p-2"
+          className="absolute top-0 right-0 m-2 bg-black text-white rounded-full p-2"
         >
           ✖
         </button>
